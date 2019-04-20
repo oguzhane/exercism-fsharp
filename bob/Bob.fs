@@ -20,9 +20,9 @@ let noSaying (input:string): bool =
  
 let response (input: string): string = 
   match input.Trim() with
-  | s when isYellWithQuestion s = true -> "Calm down, I know what I'm doing!"
-  | s when isYell s = true -> "Whoa, chill out!" 
-  | s when isQuestion s = true -> "Sure." 
-  | s when noSaying s = true -> "Fine. Be that way!" 
+  | s when isYellWithQuestion s  -> "Calm down, I know what I'm doing!"
+  | s when isYell s -> "Whoa, chill out!" 
+  | s when isQuestion s  -> "Sure." 
+  | s when noSaying s -> "Fine. Be that way!" 
   | _ -> "Whatever."
 
